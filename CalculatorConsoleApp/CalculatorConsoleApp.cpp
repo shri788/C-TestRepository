@@ -3,9 +3,11 @@
 
 #include <iostream>
 #include "Calculator.h"
+#include <vector>
 using namespace std;
 int main()
 {
+    /*
     double x = 0.0;
     double y = 0.0;
     double sum = 0.0;
@@ -20,7 +22,29 @@ int main()
         cin >> x >> opr >> y;
         sum = C.Calculate(x, opr, y);
         cout << "Your Result Is : " << sum << endl;
+    } */
+    vector <string> arry;
+    string x;
+    cout << "Provide array data from first Int Valut To 10" << endl;
+
+    while(true) {
+       
+        cin >> x;
+        arry.push_back(x);
+        cout << endl;
+        if (arry.size() == 10) {
+            cout << arry.size() << endl;
+            for (int i = 0; i < arry.size(); i++) {
+                cout << arry[i] << ',';
+            }
+           // cout << arry[9];
+            arry.clear();
+        }
     }
+    
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
