@@ -20,7 +20,6 @@ int main()
         cin >> x >> opr >> y;
         sum = C.Calculate(x, opr, y);
         cout << "Your Result Is : " << sum << endl;
-
     }
 }
 
