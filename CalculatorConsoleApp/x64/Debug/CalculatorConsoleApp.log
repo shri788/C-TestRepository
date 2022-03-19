@@ -1,0 +1,3 @@
+﻿  CalculatorConsoleApp.cpp
+D:\C++\CalculatorConsoleApp\CalculatorConsoleApp\CalculatorConsoleApp.cpp(21,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  CalculatorConsoleApp.vcxproj -> D:\C++\CalculatorConsoleApp\x64\Debug\CalculatorConsoleApp.exe
