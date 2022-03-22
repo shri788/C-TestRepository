@@ -22,7 +22,7 @@ int main()
         cin >> x >> opr >> y;
         sum = C.Calculate(x, opr, y);
         cout << "Your Result Is : " << sum << endl;
-    } */
+    } 
     vector <string> arry;
     string x;
     cout << "Provide array data from first Int Valut To 10" << endl;
@@ -40,9 +40,58 @@ int main()
            // cout << arry[9];
             arry.clear();
         }
+        
+    int arr[100], tot, larg, i;
+    cout << "Enter the Size (max. 100): ";
+    cin >> tot;
+    cout << "Enter " << tot << " Array Elements: ";
+    for (i = 0; i < tot; i++)
+        cin >> arr[i];
+    larg = arr[0];
+   
+     for (i = 1; i < tot; i++)
+    {
+        if (larg < arr[i])
+            larg = arr[i];
     }
+    cout << "\nLargest Number = " << larg;
+    cout << endl;
+    return 0;
     
+    
+    int n, sum = 0;
 
+    cout << "Enter A Positive Integer : " << endl;
+    cin >> n;
+    cout << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        sum += i;
+    }
+    cout << "Total is " << sum;
+    */
+
+    int n; 
+    bool isPrime = true;
+    cout << "Enter Any Interger Number : " << endl;
+    cin >> n;
+    
+    if (n != 0 && n != 1) {
+        for (int i = 2; i < n / 2; ++i) 
+        {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+    if (isPrime) {
+        cout << n << " is A Prime Number." << endl;
+    }
+    else {
+        cout << n << " is Not A Prime Number." << endl;
+    }
 
 
 }
